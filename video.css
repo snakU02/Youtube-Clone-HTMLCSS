@@ -1,0 +1,145 @@
+.image {
+  width: 100%;
+}
+
+
+.thumnail-row {
+  margin-bottom: 7px;
+  position: relative;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+/*This is for responsive desing(Media Query),
+so when compressing the will compress it
+to 2 column or 1 etc. 
+This will only activate when the
+screen size is 600px or less
+*/
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*can have combination, and like specific*/
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+
+.video-infor-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.profile-picture {
+  width: 37px;
+  height: 37px;
+  border-radius: 50px;
+}
+
+.vid-author,
+.vid-stats {
+
+  font-size: 12px;
+  color: #8a8a8a;
+}
+
+
+.video-title {
+  margin-top: 0px;
+  font-size: 14px;
+  /*the 600 is from the goole font it is bold, i just use the 700 for more accurate*/
+  font-weight: 600;
+  line-height: 17px;
+  margin-bottom: 11px;
+}
+
+.vid-author {
+
+  margin-bottom: 2px;
+}
+
+.vid-stats {
+  font-size: 13px;
+}
+
+.video-time {
+  font-family: Robot, Arial;
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  background-color: black;
+  color: white;
+  right: 7px;
+  bottom: 10px;
+  /*Can also do padding: 3px; instead if all equal
+  If using two padding: 3px 2px; means
+   Top&Botton(Vertical padding) and 
+   Left&Right(Horizontal padding)
+   SAME TO 'MARGIN'
+  Top → Right → Bottom → Left*/
+  padding: 3px 3px 3px 3px;
+
+  border-radius: 2px;
+}
+
+.title-link {
+  color: black;
+  text-decoration: none;
+}
+
+.title-link:hover {
+  text-decoration: underline;
+}
+
+.profile-picture-tooltips {
+  position: relative;
+}
+
+.profile-picture-tooltips .profiles-tooltip {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 230px;
+  height: 50px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: 0.18s;
+  pointer-events: none;
+}
+
+.profile-picture-tooltips:hover .profiles-tooltip {
+  opacity: 1;
+}
+
+.flex-tooltip-info p {
+  margin-left: 10px;
+}
+
+.vid-author-tooltip {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.profile-picture-tooltips {
+  display: inline-block;
+}

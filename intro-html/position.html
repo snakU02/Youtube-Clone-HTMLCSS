@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+    Position fixed=fixed(placed in the 'browser windows', when scrolling its not moving)
+    Position absolute=absolute(place on the 'page', when scrolling it will move)
+
+    Position absolute is inside the position relative so 
+    the absolute is stick position relative not in the page
+    -->
+
+</head>
+
+<body style="height: 3000px;
+    padding-top: 60px;
+    padding-left: 80px;
+    ">
+    <div class="header" style="
+        background-color: black;
+        color: white;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        height: 50px;
+        z-index: 1;
+        ">header</div> <!--z-index: 1; is use to make it to the top of the page, 
+        the higher the index the one  that is at the top-->
+
+    <div style="position: absolute;
+     background-color: red;
+     
+     ">divvididii</div>
+
+    <div style="width: 72px;
+    background-color: blue;
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    ">sidebar</div>
+    <div class="a" style="background-color: lightblue;
+    width: 100px;
+    height: 300px;
+    ">div1</div>
+    <div class="b" style="background-color: lightpink;
+    width: 100px;
+    height: 300px;
+    ">div1</div>
+
+
+
+
+    <!--   
+
+     <div class="container">
+        <div class="sidebar" style="width: 90px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: green;
+    color: white;
+    ">
+            rightsidebar
+        </div>
+
+    </div>
+
+             <div style="background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ">
+            <div style="width: 450px;
+    height: 150px;
+    background-color: rgb(252, 252, 252);
+    border: none;
+    border-radius: 10px;
+    color: rgb(11, 11, 11);
+    ">
+                <h1 style="font-size: 30px;
+        font-family: arial;
+        margin-left: 20px;
+        ">Modal Title</h1>
+                <p style="font-family: arial; padding-left: 20px;">This is a modal</p>
+                <button style="margin-left: 20px;">Close</button>
+            </div>
+        </div>
+        
+        -->
+</body>
+
+</html>

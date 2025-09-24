@@ -1,0 +1,119 @@
+  .button {
+    background-color: rgb(30, 181, 246);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    margin-left: 100px;
+    border-radius: 14px;
+  }
+
+  .message {
+    font-size: 15px;
+    width: 200px;
+    border: none;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+
+  .image {
+    height: 50px;
+    border-radius: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  .add-button {
+    background-color: rgb(36, 135, 234);
+    color: white;
+    font-size: 12px;
+    height: 25px;
+    width: 80px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .box {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 450px;
+    border-radius: 6px;
+    font-family: arial;
+  }
+
+  /*///////////////////////////////////*/
+
+  p {
+    font-family: Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    column-gap: 20px;
+  }
+
+  .profile {
+    width: 200px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    vertical-align: top;
+    margin-right: 15px;
+  }
+
+  .profile-picture {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 12px;
+  }
+
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 8px;
+    margin-bottom: 5px;
+  }
+
+  .mutual-friends-row {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    align-items: center;
+    margin-left: 8px;
+    margin-bottom: 10px;
+  }
+
+  .mutual-friend-picture {
+    height: 28px;
+    width: 28px;
+    object-fit: cover;
+    border-radius: 14px;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+
+  .mutual-friends {
+    color: rgb(100, 100, 100);
+  }
+
+  .add-friend-button {
+    background-color: rgb(24, 119, 242);
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+  }

@@ -1,0 +1,37 @@
+.side-bar {
+    background-color: white;
+    width: 72px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 45px;
+    z-index: 2;
+}
+
+.sidebar-link {
+    height: 91px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex coloum display elements vertical. 
+    row is horizontaly*/
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.sidebar-link:hover {
+    transition: 0.2s;
+    background-color: rgb(216, 216, 216);
+}
+
+/*It needs 'space' and only target
+the img inside the sidebar-link*/
+.sidebar-link img {
+    height: 35px;
+}
+
+.sidebar-link div {
+    font-size: 12px;
+    font-family: Roboto, Arial;
+    margin-top: 5px;
+}

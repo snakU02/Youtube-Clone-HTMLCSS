@@ -1,0 +1,15 @@
+p {
+  /*use the arial for backup font incase the robot did not load in the page*/
+  font-family: Roboto, Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  height: 3000px;
+  margin: 0;
+  padding-top: 70px;
+  padding-left: 90px;
+  padding-right: 24px;
+  background-color: #efefef;
+}

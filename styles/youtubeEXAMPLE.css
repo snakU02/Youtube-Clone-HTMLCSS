@@ -1,0 +1,9 @@
+.image{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    object-position: bottom;
+    border-color: red;
+    border-style: solid;
+    border-width: 5px;
+}

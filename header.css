@@ -1,0 +1,198 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 45px;
+  justify-content: space-between;
+  background-color: white;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  /*only border the bottom*/
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(212, 212, 212);
+  z-index: 1;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.side-bar-logo {
+  height: 23px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.youtube-logo {
+  height: 40px;
+}
+
+.logo-letter {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.middle-section {
+  display: flex;
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 30px;
+  max-width: 500px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.search-bar,
+.magnifying-background {
+  border-color: rgb(222, 220, 220);
+  border-width: 1.5px;
+  border-style: solid;
+  /*Short version
+  border: 1.5px solid rgb(222, 220, 220);
+  */
+
+}
+
+.search-bar {
+  flex: 1;
+  padding-left: 13px;
+  font-size: 14px;
+  border-radius: 2px;
+  /*'inset' means inside the box*/
+  /*///////////// Vert ,Hori ,Blur///////////Opacity*/
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.05);
+  /*width: 0: is use to shrink the
+  search barthe 'flex-shrink: 0;' 
+  used to unshrink*/
+  width: 0;
+}
+
+/*::placeholder to modify the place holder text*/
+.search-bar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 15px;
+}
+
+.magnifying {
+  height: 20px;
+}
+
+.magnifying-background {
+  width: 60px;
+  margin-left: -1px;
+}
+
+.magnifying-background,
+.mic-background,
+.video-icon-container,
+.grid-icon-container,
+.notifications-icon-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mic-background .tooltip {
+  bottom: -28.8px;
+}
+
+.magnifying-background .tooltip,
+.video-icon-container .tooltip,
+.grid-icon-container .tooltip,
+.notifications-icon-container .tooltip {
+  bottom: -30px;
+}
+
+.magnifying-background .tooltip,
+.mic-background .tooltip,
+.video-icon-container .tooltip,
+.grid-icon-container .tooltip,
+.notifications-icon-container .tooltip {
+  font-family: Roboto, Arial;
+  position: absolute;
+  color: white;
+  background-color: rgb(98, 98, 98);
+  padding: 4px 8px 4px 8px;
+  font-size: 12px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: 0.14s;
+  /*since the tooltip is inside the 
+  button when pointing the tooltip will
+  cause to hover. To prevent it, the
+  only button will affect when pointing
+  not the tooltip*/
+  pointer-events: none;
+  /*Prevents text from wrapping around*/
+  white-space: nowrap;
+}
+
+/*it will target the tooltip only when
+hovering to the button of manifying-
+background button. 
+*/
+.magnifying-background:hover .tooltip,
+.mic-background:hover .tooltip,
+.video-icon-container:hover .tooltip,
+.grid-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip {
+  opacity: 1;
+}
+
+.mic {
+  height: 20px;
+}
+
+.mic-background {
+  margin-left: 10px;
+  width: 35px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(245, 245, 245);
+}
+
+.right-section {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 45px;
+  /*Prevents shrinking, like compressing
+  when compressing the tab*/
+  flex-shrink: 0;
+}
+
+.vid,
+.grid,
+.bell {
+  height: 30px;
+  margin-right: 5px;
+}
+
+.header-profile {
+  height: 35px;
+  border-radius: 70px;
+}
+
+.notification-icon {
+  position: relative;
+
+}
+
+.notificaiton-count {
+  font-family: Roboto, Arial;
+  position: absolute;
+  background-color: rgb(190, 0, 0);
+  color: white;
+  top: 1px;
+  right: 2px;
+  font-size: 10px;
+  border-radius: 10px;
+  padding: 2px 5px 2px 5px;
+}

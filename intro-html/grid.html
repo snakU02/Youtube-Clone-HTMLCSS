@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body style="padding-bottom: 1000px;">
+    <div style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100px 100px 200px;
+        ">
+        <div style="background-color: lightblue;">
+            100px
+        </div>
+        <div style="background-color: lightpink;">
+            100px <p>text</p>
+            <p>text</p>
+        </div>
+        <div style="background-color: lightblue;">
+            200px
+        </div>
+        </div>
+
+
+        <div style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100px 100px 200px;
+        ">
+            <div style="background-color: lightblue;">
+                100px
+            </div>
+            <div style="background-color: lightpink;">
+                100px <p>text</p>
+            </div>
+            <div style="background-color: lightblue;">
+                200px
+            </div>
+            <div style="background-color: rgb(43, 198, 67);">
+                100px
+            </div>
+        </div>
+
+        <div style="
+        margin-top: 30px;
+        display: grid;
+        /*takes up the whole final line/whole final line*/
+        grid-template-columns: 100px 1fr;
+        ">
+            <div style="background-color: lightblue;">
+                100px
+            </div>
+            <div style="background-color: lightpink;">
+                1fr
+            </div>
+        </div>
+
+
+        <div style="
+        margin-top: 30px;
+        display: grid;
+        /*1fr takes up the remaining amount of space*/
+        grid-template-columns: 100px 1fr 2fr;
+        ">
+            <div style="background-color: lightblue;">
+                100px
+            </div>
+            <div style="background-color: lightpink;">
+                1fr
+            </div>
+            <div style="background-color: lightblue;">
+                2fr
+            </div>
+        </div>
+
+        <div style="
+        margin-top: 30px;
+        display: grid;
+        /*1fr takes up the remaining amount of space*/
+        grid-template-columns: 1fr 1fr 1fr; column-gap: 20px;
+        row-gap: 40px;
+        ">
+            <div style="background-color: lightblue; height: 200px;">
+                1fr
+            </div>
+            <div style="background-color: lightpink; height: 200px;">
+                1fr
+            </div>
+            <div style="background-color: lightblue; height: 200px;">
+                1fr
+            </div>
+            <div style="background-color: lightpink; height: 200px;">
+                1fr
+            </div>
+             <div style="background-color: lightblue; height: 200px;">
+                1fr
+            </div>
+            <div style="background-color: lightpink; height: 200px;">
+                1fr
+            </div>
+            
+
+             <style>
+  
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+.grid {
+  background-color: lightpink;
+}
+ </style>
+ 
+  <div class="main">
+    <div class="grid">
+      col1
+    </div>
+    <div class="grid">
+      col2
+    </div>
+    <div class="grid">
+      col3
+    </div>
+    <div class="grid">
+      col4
+    </div>
+
+    <div class="grid">
+      col1
+    </div>
+    <div class="grid">
+      col2
+    </div>
+    <div class="grid">
+      col3
+    </div>
+    <div class="grid">
+      col4
+    </div>
+
+  </div>
+
+        </div>
+
+
+
+        
+        
+</body>
+
+</html>
